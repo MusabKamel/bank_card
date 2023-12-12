@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Belanosima&family=Cairo:wght@500;600;700&family=Inter:wght@200;300;500&family=Open+Sans:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,700;0,800;1,400&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="./CSS/bank.css" />
+  </head>
+  <body>
+    <div class="contaner">
+      <div class="left-img">
+        <div class="card">
+          <img class="card-logo" src="./images/card-logo.svg" alt="" />
+          <span id="cardNumber" class="card-num"> 0000 0000 0000 0000 </span>
+
+          <span id="caedName" class="card-name"> Jane Appleseed </span>
+          <span id="cardMonth" class="card-month">00</span>
+          <span class="slath">/ </span>
+          <span id="cardYear" class="card-year">00</span>
+          <img class="card-front" src="./images/bg-card-front.png" alt="" />
+        </div>
+        <div class="card-2">
+          <img src="./images/bg-card-back.png" alt="" />
+          <span id="cardCvc" class="card-2-num"> 000 </span>
+        </div>
+      </div>
+
+      <div class="right-part">
+        <form id="form">
+          <label> CARDHOLDERNAME</label>
+          <input
+            id="nameInput"
+            placeholder="e.g. Jane Appleseed "
+            type="text"
+          />
+          <span class="eror" id="nameEror"></span>
+          <label> CARD NUMDER</label>
+          <input
+            id="numberInput"
+            placeholder="e.g. 1234 5678 9123 0000"
+            type="text"
+          />
+          <span class="eror" id="numberEror"></span>
+          <div class="line">
+            <div class="data">
+              <label> EXP.DATE </label>
+              <input id="monthInput" placeholder="MM" type="text" />
+              <span id="monthEror"></span>
+            </div>
+            <div class="data">
+              <label> (MM/YY) </label>
+              <input id="yearInput" placeholder="YY" type="text" />
+              <span id="yearEror"></span>
+            </div>
+            <div class="data-s">
+              <label> cvc</label>
+              <input id="cvcInput" placeholder="e.g. 123" type="text" />
+              <span id="cvcEroe"></span>
+            </div>
+          </div>
+          <button id="button">confirm</button>
+        </form>
+      </div>
+    </div>
+    <script src="./JS/bank.js"></script>
+  </body>
+</html>

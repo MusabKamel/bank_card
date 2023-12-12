@@ -1,0 +1,249 @@
+
+:root{
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.contaner{
+    display: flex;
+}
+
+.left-img{
+background-image: url(/images/bg-main-desktop.png);
+background-size: cover;
+width: 295px;
+height: 100vh;
+}
+
+.card{
+    position: relative;
+    top: 125px;
+    left: 115px;
+}
+
+.card .card-logo{
+    position: absolute;
+    width: 55px;
+    left: 15px;
+    top: 15px;
+}
+
+.card .card-front{
+    width: 240px;
+}
+
+.card .card-num{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 20px;
+    color: white;
+    font-weight:400;
+    letter-spacing: 3px;
+}
+
+.card .card-name{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: x-small;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.card .card-month{
+    position: absolute;
+    bottom: 15px;
+    left: 200px;
+    font-size: x-small;
+    color: white;
+}
+
+.card .card-year{
+    position: absolute;
+    bottom: 15px;
+    right: 17px;
+    font-size: x-small;
+    color: white;
+}
+
+.card-2{
+    position: relative;
+    top: 150px;
+    left: 170px;
+}
+    
+.card-2 img{
+    width: 240px;
+}
+
+.card-2 .card-2-num{
+    position: absolute;
+    top: 58px;
+    right: 30px;
+    color: white;
+    font-size: x-small;
+    letter-spacing: 2px;
+}
+
+.right-part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+}
+
+label{
+    font-size: xx-small;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    margin-top: 20px;
+}
+
+input{
+    border: 1px solid #e2dfdf;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form div{
+    display: flex;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin-right: 6px;
+}
+.data-s{
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+}
+
+button{
+    padding: 7px;
+    background-color: hsl(272deg 41% 13%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.slath{
+    position: absolute;
+    font-size: x-small;
+    bottom: 15px;
+    color: white;
+    right: 27px;
+}
+
+.spass{
+    margin-left: 3px;
+}
+
+.eror{
+    color: rgb(216 51 51 / 85%);
+    font-size: x-small;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.input-eror{
+    border-color:rgb(216 51 51 / 85%);
+}
+
+@media only screen and (max-width: 800px) {
+  
+    .card-2{
+        position: absolute;
+        top: 45px;
+        left: 30px;
+    }
+     .card{
+        position: absolute;
+        left: 30px;
+        top: 250px;
+    }
+    .card .card-year{
+        right: 17px;
+    }
+    .card-2 .card-2-num{
+        right: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .left-img{
+        background-image: url("/images/bg-main-mobile.png");
+        width: 100%;
+        height: 200px;
+    }
+    .card-2{
+        position: absolute;
+        top: 35px;
+        left: 110px;
+    }
+    .card-2 .card-2-num{
+        top: 60px;
+        left: 185px;
+    }
+    .card{
+        position: absolute;
+        left: 20px;
+        top: 110px;
+        z-index: 1;
+    }
+    .card .card-year{
+        left: 214px;
+
+    }
+    .right-part{
+        position: absolute;
+        top: 39%;
+    }
+
+    form{
+        width: 88%;
+    }
+
+    label {
+    font-size: small;
+    margin-bottom: 10px;
+    }
+
+    input{
+        padding: 10px;
+        font-size: inherit;
+    }
+
+    button{
+        padding: 14px;
+    }
+
+}
+
+
