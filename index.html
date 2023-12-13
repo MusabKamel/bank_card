@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="./CSS/bank.css" />
   </head>
   <body>
-    <div class="contaner">
+    <div class="container">
       <div class="left-img">
         <div class="card">
           <img class="card-logo" src="./images/card-logo.svg" alt="" />
           <span id="cardNumber" class="card-num"> 0000 0000 0000 0000 </span>
 
-          <span id="caedName" class="card-name"> Jane Appleseed </span>
+          <span id="cardName" class="card-name"> Jane Appleseed </span>
           <span id="cardMonth" class="card-month">00</span>
-          <span class="slath">/ </span>
+          <span class="slash">/ </span>
           <span id="cardYear" class="card-year">00</span>
           <img class="card-front" src="./images/bg-card-front.png" alt="" />
         </div>
@@ -41,33 +41,41 @@
             placeholder="e.g. Jane Appleseed "
             type="text"
           />
-          <span class="eror" id="nameEror"></span>
-          <label> CARD NUMDER</label>
+          <span class="error" id="nameError"></span>
+          <label> CARD NUMBER</label>
           <input
             id="numberInput"
             placeholder="e.g. 1234 5678 9123 0000"
             type="text"
           />
-          <span class="eror" id="numberEror"></span>
+          <span class="error" id="numberError"></span>
           <div class="line">
             <div class="data">
               <label> EXP.DATE </label>
               <input id="monthInput" placeholder="MM" type="text" />
-              <span id="monthEror"></span>
+              <span class="error" id="monthError"></span>
             </div>
             <div class="data">
               <label> (MM/YY) </label>
               <input id="yearInput" placeholder="YY" type="text" />
-              <span id="yearEror"></span>
+              <span class="error" id="yearError"></span>
             </div>
             <div class="data-s">
               <label> cvc</label>
               <input id="cvcInput" placeholder="e.g. 123" type="text" />
-              <span id="cvcEroe"></span>
+              <span class="error" id="cvcError"></span>
             </div>
           </div>
           <button id="button">confirm</button>
         </form>
+        <div id="success" class="success">
+          <div>
+          <img style="width: 50px;" src="./images/icon-complete.svg" alt="">
+          <h5> thank you!</h5>
+          <p>we've added your card details</p>
+          <button id="butSuccess" >Continue</button>
+        </div>
+        </div>
       </div>
     </div>
     <script src="./JS/bank.js"></script>
