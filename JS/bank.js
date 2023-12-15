@@ -110,6 +110,17 @@ function isCvcValid(cvc) {
   }
 }
 
+// function spasNumber(cardNumber){
+//   for (let i = 0; i < cardNumber.length; i++) {
+//     cardNumber.charAt(i);
+//     if (i == 4 || i == 8 || i == 12) {
+
+      
+//     }
+//   }
+// }
+// spasNumber(numberInputElement.value);
+
 function addResult(block, none) {
   block.classList.add("block");
   none.classList.add("none");

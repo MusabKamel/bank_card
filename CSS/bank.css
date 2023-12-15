@@ -19,7 +19,7 @@ body{
 }
 
 .left-img{
-background-image: url(/images/bg-main-desktop.png);
+background-image: url("../images/bg-main-desktop.png");
 background-size: cover;
 width: 295px;
 height: 100vh;
@@ -150,6 +150,7 @@ button{
     margin-top: 20px;
 }
 
+
 .but{
     width: 225px;
 }
@@ -190,7 +191,7 @@ p{
 }
 
 .spas{
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .error{
