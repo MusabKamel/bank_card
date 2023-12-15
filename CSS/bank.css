@@ -148,7 +148,10 @@ button{
     border: none;
     color: white;
     margin-top: 20px;
-    width: 215px;
+}
+
+.but{
+    width: 225px;
 }
 .success{
     display: none;

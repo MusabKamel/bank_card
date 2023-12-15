@@ -91,9 +91,7 @@ function isYearValid(year) {
 function isMonthValid(month) {
   if (isEmpty(month)) {
     return { valid: false, error: "can't be blank" };
-  } else if (month <= 0 || month > 12) {
-    return { valid: false, error: "Not a month" };
-  } else if (isNumber(month)) {
+  } else if (month > 0 && month < 12) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, numbers only" };
@@ -117,13 +115,10 @@ function addResult(block, none) {
   none.classList.add("none");
 }
 
-butSuccessElement.onclick = function(e){
-  e.preventDefault();
-  console.log(formElement);
+butSuccessElement.onclick = function (e) {
   formElement.classList.remove("none");
-  successElement.classList.add("none");
-
-}
+  successElement.classList.remove("block");
+};
 
 buttonElement.onclick = function (e) {
   e.preventDefault();
