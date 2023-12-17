@@ -22,11 +22,20 @@ function addText(value, place) {
   place.innerHTML = value;
 }
 
+function spasNumber(number) {
+  let r = number.slice(0, 4);
+  let r2 = number.slice(4, 8);
+  let r3 = number.slice(8, 12);
+  let r4 = number.slice(12, 16);
+  let re = r + " " + r2 + " " + r3 + " " + r4;
+  return re;
+}
+
 nameInputElement.oninput = function (e) {
   addText(nameInputElement.value, cardNameElement);
 };
 numberInputElement.oninput = function (e) {
-  addText(numberInputElement.value, cardNumberElement);
+  addText(spasNumber(numberInputElement.value), cardNumberElement);
 };
 monthInputElement.oninput = function (e) {
   addText(monthInputElement.value, cardMonthElement);
@@ -109,17 +118,6 @@ function isCvcValid(cvc) {
     return { valid: false, error: "wrang format, numbers only" };
   }
 }
-
-// function spasNumber(cardNumber){
-//   for (let i = 0; i < cardNumber.length; i++) {
-//     cardNumber.charAt(i);
-//     if (i == 4 || i == 8 || i == 12) {
-
-      
-//     }
-//   }
-// }
-// spasNumber(numberInputElement.value);
 
 function addResult(block, none) {
   block.classList.add("block");
