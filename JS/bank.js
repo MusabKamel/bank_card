@@ -60,7 +60,8 @@ function removeError(error, inputError) {
 function isCardNameValid(username) {
   if (username.length <= 2) {
     return { valid: false, error: "not valid name" };
-  } else if (/^[a-zA-Z_\.]+$/.exec(username)) {
+  }
+  if (/^[a-zA-Z_\.]+$/.exec(username)) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, later only" };
@@ -74,7 +75,8 @@ function isNumber(number) {
 function isCardNumberValid(number) {
   if (number.length != 16) {
     return { valid: false, error: "Length is not equal 16" };
-  } else if (isNumber(number)) {
+  }
+  if (isNumber(number)) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, numbers only" };
@@ -88,9 +90,11 @@ function isEmpty(value) {
 function isYearValid(year) {
   if (isEmpty(year)) {
     return { valid: false, error: "can't be blank" };
-  } else if (year.length > 2) {
+  }
+  if (year.length > 2) {
     return { valid: false, error: "Length is not allowed" };
-  } else if (isNumber(year)) {
+  }
+  if (isNumber(year)) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, numbers only" };
@@ -100,7 +104,8 @@ function isYearValid(year) {
 function isMonthValid(month) {
   if (isEmpty(month)) {
     return { valid: false, error: "can't be blank" };
-  } else if (month > 0 && month < 12) {
+  }
+  if (month > 0 && month < 12) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, numbers only" };
@@ -110,9 +115,11 @@ function isMonthValid(month) {
 function isCvcValid(cvc) {
   if (isEmpty(cvc)) {
     return { valid: false, error: "can't be blank" };
-  } else if (cvc.length > 3) {
+  }
+  if (cvc.length > 3) {
     return { valid: false, error: "Length is not allowed" };
-  } else if (isNumber(cvc)) {
+  }
+  if (isNumber(cvc)) {
     return { valid: true };
   } else {
     return { valid: false, error: "wrang format, numbers only" };
