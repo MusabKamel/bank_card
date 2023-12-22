@@ -23,12 +23,12 @@ function addText(value, place) {
 }
 
 function spasNumber(number) {
-  let r = number.slice(0, 4);
-  let r2 = number.slice(4, 8);
-  let r3 = number.slice(8, 12);
-  let r4 = number.slice(12, 16);
-  let re = r + " " + r2 + " " + r3 + " " + r4;
-  return re;
+  let x = number.slice(0, 4);
+  let y = number.slice(4, 8);
+  let z = number.slice(8, 12);
+  let a = number.slice(12, 16);
+  let result = x + " " + y + " " + z + " " + a;
+  return result;
 }
 
 nameInputElement.oninput = function (e) {
